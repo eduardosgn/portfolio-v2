@@ -10,11 +10,25 @@ export default function ColorModeButton() {
         setIsDarkMode(
             window.matchMedia("(prefers-color-scheme: dark)").matches
         );
+
+        // Recupera o modo selecionado anteriormente pelo usuário no localStorage
+        const savedMode = localStorage.getItem("mode");
+        if (savedMode) {
+            setIsDarkMode(savedMode === "dark");
+            document.documentElement.classList.toggle(
+                "dark",
+                savedMode === "dark"
+            );
+        }
     }, []);
 
     function toggleDarkMode() {
+        const newMode = isDarkMode ? "light" : "dark";
         setIsDarkMode(!isDarkMode);
-        document.documentElement.classList.toggle("dark");
+        document.documentElement.classList.toggle("dark", newMode === "dark");
+
+        // Salva o modo selecionado pelo usuário no localStorage
+        localStorage.setItem("mode", newMode);
     }
 
     return (

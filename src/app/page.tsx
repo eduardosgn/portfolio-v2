@@ -18,7 +18,7 @@ export default function Home() {
 
             <Divider />
 
-            <h1 className="text-white dark:text-gray700 transition-all sm:text-5xl sm:font-bold md:font-normal md:text-6xl xl:text-8xl">
+            <h1 className="text-white dark:text-gray700 transition-all text-4xl font-bold sm:text-5xl md:font-normal md:text-6xl xl:text-8xl">
                 Eduardo Nascimento
             </h1>
 
