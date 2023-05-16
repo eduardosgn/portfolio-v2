@@ -8,6 +8,15 @@ body {
     background-image: url(../assets/bg.png);
     background-size: cover;
     background-position: center center;
+    -ms-overflow-style: none;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0 !important;
 }
 
 .ellipse1 {
@@ -15,7 +24,7 @@ body {
     height: 40rem;
     border-radius: 50rem;
     filter: brightness(250%) blur(4rem);
-    background: #14E4CB;
+    background: #14e4cb;
     animation: ellipseAnim 5s ease-in-out infinite alternate both;
 }
 
@@ -24,16 +33,16 @@ body {
     height: 30rem;
     border-radius: 50rem;
     filter: blur(4rem);
-    background: #14E4CB;
+    background: #14e4cb;
     animation: ellipseAnim 5s ease-in-out infinite alternate both;
 }
 
 @keyframes ellipseAnim {
-	0% {
-		transform: translateX(0) translateY(0) scale(1);
-	}
+    0% {
+        transform: translateX(0) translateY(0) scale(1);
+    }
 
-	100% {
-		transform: translateX(#{$rand}px) translateY(#{$rand}px) scale(1.15);
-	}
+    100% {
+        transform: translateX(#{$rand}px) translateY(#{$rand}px) scale(1.15);
+    }
 }

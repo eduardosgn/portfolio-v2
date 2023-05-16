@@ -6,8 +6,8 @@ export default function Home() {
     return (
         <main className="flex flex-col sm:justify-start sm:mt-6 xl:mt-0 xl:justify-center h-full">
             <div className="flex items-end justify-between">
-                <p className="text-white dark:text-gray700 text-lg transition-all">
-                    Designer de interfaces / Desenvolvedor Front-end
+                <p className="text-white dark:text-gray700 text-md transition-all">
+                    UX/UI Designer & Dev. Front-end
                 </p>
 
                 <MdOutlineDesignServices
