@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-$rand: random(100) + 50;
+$rand: random(50);
 
 body {
     background-image: url(../assets/bg.png);
@@ -43,6 +43,6 @@ body::-webkit-scrollbar {
     }
 
     100% {
-        transform: translateX(#{$rand}px) translateY(#{$rand}px) scale(1.15);
+        transform: translateX(30px) translateY(20px) scale(1.18);
     }
 }

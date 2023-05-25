@@ -12,7 +12,7 @@ export default function Home() {
 
                 <MdOutlineDesignServices
                     size={40}
-                    className="text-white dark:text-gray700 transition-all"
+                    className="text-white dark:text-gray700 transition-all hidden md:block"
                 />
             </div>
 
@@ -22,7 +22,16 @@ export default function Home() {
                 Eduardo Nascimento
             </h1>
 
-            <ButtonGroup />
+            <ButtonGroup
+                btn1="Sobre"
+                btn2="Formação"
+                btn3="Projetos"
+                btn4="Contato"
+                hrefBtn1="/about"
+                hrefBtn2="/education"
+                hrefBtn3="/projects"
+                hrefBtn4="/contact"
+            />
         </main>
     );
 }
